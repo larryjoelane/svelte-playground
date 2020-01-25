@@ -1,4 +1,4 @@
-<input type="text" class="text-box" value="{text}" on:click={onClick}>
+<input type="{ inputType }" class="text-box" value="{text}" on:click={onClick}>
 
 <style>
     .text-box {
@@ -16,6 +16,7 @@
   import { createEventDispatcher } from 'svelte';
   
   export let text = '';
+  export let inputType = '';
 
   const dispatch = createEventDispatcher();
 

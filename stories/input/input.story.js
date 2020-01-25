@@ -9,13 +9,13 @@ export default {
 
 export const Text = () => ({
   Component: Input,
-  props: { typeValue: 'text', text: 'Example Input' },
+  props: { inputType: 'text', text: 'Example Input' },
   on: { click: action('clicked') },
 });
 
 export const Password = () => ({
   Component: Input,
-  props: { type: 'password', text: ''},
+  props: { inputType: 'password', text: ''},
   on: { click: action('clicked') },
 });
 
